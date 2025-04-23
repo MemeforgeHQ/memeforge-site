@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>MemeForge HQ – Forging the Meme Meta</title>
 
   <!-- SEO & Social Preview -->
@@ -21,12 +21,12 @@
 <body>
   <header>
     <nav>
-      <a class="logo" href="/">
-        <img src="assets/memeforge-logo.png" alt="MemeForge logo" />
-        MemeForge HQ
-      </a>
-      <div class="social-nav">
-        <a class="btn" href="https://twitter.com/MemeForgeHQ" target="_blank" rel="noopener">Follow us on X</a>
+      <div class="nav-container">
+        <a class="logo" href="/">
+          <img src="assets/memeforge-logo.png" alt="MemeForge logo" />
+          MemeForge HQ
+        </a>
+        <a class="btn social-btn" href="https://twitter.com/MemeForgeHQ" target="_blank" rel="noopener">Follow us on X</a>
       </div>
     </nav>
   </header>
@@ -55,7 +55,7 @@
     <div class="card">
       <p>📜 Smart-contract audit: <em>link to PDF</em></p>
       <p>🔒 LP-lock/burn TX: <em>posted at launch</em></p>
-      <p>💼 Treasury wallet (multisig): <code>to-be-announced</code> – real-time Solscan view</p>
+      <p>💼 Treasury wallet (multisig): <code>to-be-announced</code></p>
       <p>📈 Holder & mcap dashboards: live on Dune</p>
     </div>
   </section>
