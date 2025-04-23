@@ -4,15 +4,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MemeForge HQ – Forging the Meme Meta</title>
+  <title>MemeForge HQ – Forging the Meme Meta</title>
+
   <!-- SEO & Social Preview -->
   <meta name="description" content="MemeForge HQ – forging trust-first meme launches. Join the raid: $OOZE – Turbo Snail on Pump.fun. No rug-pulls, community-led." />
   <meta property="og:title" content="MemeForge HQ – Forging the Meme Meta" />
   <meta property="og:description" content="We launch trust-first memecoins like $OOZE – Turbo Snail. No rug-pulls, permanently locked liquidity." />
-  <meta property="og:image" content="https://memeforge.me/assets/memeforge-logo.png" />
+  <meta property="og:image" content="https://memeforge.me/assets/memeforge-banner.png" />
   <meta property="og:url" content="https://memeforge.me" />
   <meta name="twitter:card" content="summary_large_image" />
-  <!-- External stylesheet for performance & maintainability -->
+
+  <!-- Preload & External Stylesheet -->
+  <link rel="preload" href="assets/styles.css" as="style" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -22,33 +25,28 @@
         <img src="assets/memeforge-logo.png" alt="MemeForge logo" />
         MemeForge HQ
       </a>
-      <a class="btn" href="https://twitter.com/MemeForgeHQ" target="_blank" rel="noopener">Follow us on X</a>
+      <div class="social-nav">
+        <a class="btn" href="https://twitter.com/MemeForgeHQ" target="_blank" rel="noopener">Follow us on X (5k+ followers)</a>
+      </div>
     </nav>
   </header>
 
   <section class="hero">
     <img src="assets/memeforge-logo.png" alt="MemeForge logo" />
-    <h1>Forging the Meme Meta</h1>
-    <p>We create trust-first micro-launches. One raid at a time — backed by open data & zero rug-pull policy.</p>
-    <!-- After launch, link directly to buy page -->
-    <a href="https://pump.fun/OOZE" class="btn">Buy on Pump.fun</a>
+    <h1>Forging the Meme Meta</h1>
+    <p>We create trust-first micro-launches backed by open data & zero rug-pull policy.</p>
+    <a href="https://pump.fun/OOZE" class="btn cta">Buy on Pump.fun</a>
   </section>
 
   <section id="current" class="section">
-    <h2>Current Raid: <span class="accent">$OOZE – Turbo Snail</span></h2>
-    <div class="card grid">
-      <div>
-        <h3>Launch Snapshot</h3>
-        <p><strong>Status:</strong> Pre-launch (finalising community poll)</p>
-        <p><strong>Platform:</strong> Pump.fun fair-launch</p>
-        <p><strong>Live link:</strong> <em>coming soon</em></p>
-      </div>
-      <div>
-        <h3>Key Principles</h3>
-        <p>Supply: chosen by community vote</p>
-        <p>0% tax • LP tokens permanently locked/burned — no rug-pulls</p>
-        <p>No private presale — equal footing for all buyers</p>
-      </div>
+    <h2>Current Raid: <span class="accent">$OOZE – Turbo Snail</span></h2>
+    <div class="card">
+      <h3>Key Principles</h3>
+      <ul>
+        <li>🎯 Supply chosen by community vote</li>
+        <li>🔒 0% tax • LP tokens permanently locked/burned</li>
+        <li>🤝 No private presale — equal footing for all</li>
+      </ul>
     </div>
   </section>
 
@@ -62,19 +60,43 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="roadmap">
     <h2>Roadmap</h2>
-    <div class="card">
-      <p><strong>Phase I</strong> — Pre-launch: poll, audit, site live</p>
-      <p><strong>Phase II</strong> — Pump.fun launch → auto Raydium listing</p>
-      <p><strong>Phase III</strong> — LP proof & data dashboards live</p>
-      <p><strong>Phase IV</strong> — Vote & forge the next raid 🚀</p>
+    <div class="timeline">
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+          <h4>Phase I</h4>
+          <p>Pre-launch: poll, audit, site live</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+          <h4>Phase II</h4>
+          <p>Pump.fun launch & auto Raydium listing</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+          <h4>Phase III</h4>
+          <p>LP proof & data dashboards live</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+          <h4>Phase IV</h4>
+          <p>Vote & forge the next raid 🚀</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 MemeForge HQ — Not financial advice. Do your own research.</p>
-    <div class="social">
+    <p>© 2025 MemeForge HQ — Not financial advice. Do your own research.</p>
+    <div class="social-footer">
       <a href="https://twitter.com/MemeForgeHQ" target="_blank" rel="noopener">Twitter</a>
     </div>
   </footer>
