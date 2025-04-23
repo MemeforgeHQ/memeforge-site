@@ -1,116 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>MemeForge HQ – Forging the Meme Meta</title>
-
-  <!-- SEO & Social Preview -->
-  <meta name="description" content="MemeForge HQ – forging trust-first meme launches. Join the raid: $OOZE – Turbo Snail on Pump.fun. No rug-pulls, community-led." />
-  <meta property="og:title" content="MemeForge HQ – Forging the Meme Meta" />
-  <meta property="og:description" content="We launch trust-first memecoins like $OOZE – Turbo Snail. No rug-pulls, permanently locked liquidity." />
-  <meta property="og:image" content="https://memeforge.me/assets/memeforge-banner.png" />
-  <meta property="og:url" content="https://memeforge.me" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Preload & External Stylesheet -->
-  <link rel="preload" href="assets/styles.css" as="style" />
-  <link rel="stylesheet" href="assets/styles.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="nav-container">
-        <a class="logo" href="/">
-          <img src="assets/memeforge-logo.png" alt="MemeForge logo" />
-          MemeForge HQ
-        </a>
-        <a class="btn social-btn" href="https://twitter.com/MemeForgeHQ" target="_blank" rel="noopener">Follow us on X</a>
-      </div>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <img src="assets/memeforge-logo.png" alt="MemeForge logo" />
-    <h1>Forging the Meme Meta</h1>
-    <p>We create trust-first micro-launches backed by open data & zero rug-pull policy.</p>
-    <a href="https://pump.fun/OOZE" class="btn cta">Buy on Pump.fun</a>
-  </section>
-
-  <section id="current" class="section">
-    <h2>Current Raid: <span class="accent">$OOZE – Turbo Snail</span></h2>
-    <div class="card">
-      <h3>Key Principles</h3>
-      <ul>
-        <li>🎯 Supply chosen by community vote</li>
-        <li>🔒 0% tax • LP tokens permanently locked/burned</li>
-        <li>🤝 No private presale — equal footing for all</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Transparency & Trust</h2>
-    <div class="card">
-      <p>📜 Smart-contract audit: <em>link to PDF</em></p>
-      <p>🔒 LP-lock/burn TX: <em>posted at launch</em></p>
-      <p>💼 Treasury wallet (multisig): <code>to-be-announced</code></p>
-      <p>📈 Holder & mcap dashboards: live on Dune</p>
-    </div>
-  </section>
-
-  <section class="section" id="roadmap">
-    <h2>Roadmap</h2>
-    <div class="timeline">
-      <div class="item">
-        <div class="dot"></div>
-        <div class="content">
-          <h4>Phase I</h4>
-          <p>Pre-launch: poll, audit, site live</p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="dot"></div>
-        <div class="content">
-          <h4>Phase II</h4>
-          <p>Pump.fun launch & auto Raydium listing</p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="dot"></div>
-        <div class="content">
-          <h4>Phase III</h4>
-          <p>LP proof & data dashboards live</p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="dot"></div>
-        <div class="content">
-          <h4>Phase IV</h4>
-          <p>Vote & forge the next raid 🚀</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 MemeForge HQ — Not financial advice. Do your own research.</p>
-    <div class="social-footer">
-      <a href="https://twitter.com/MemeForgeHQ" target="_blank" rel="noopener">Twitter</a>
-    </div>
-  </footer>
-</body>
-</html>
-// Mobile responsive
+:root {
+  --bg: #0d0d0e;
+  --card: #1b1b1d;
+  --accent: #ffce00;
+  --text: #f4f4f4;
+  --sub: #b5b5b5;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+header {
+  background: #111316;
+  border-bottom: 1px solid #222;
+}
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.logo img {
+  width: 42px;
+  height: 42px;
+}
+.btn {
+  background: var(--accent);
+  color: #000;
+  padding: 0.55rem 1.1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  display: inline-block;
+  transition: background 0.2s ease, padding 0.2s ease;
+}
+.btn:hover {
+  background: #e6b800;
+}
+.social-btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
+.hero {
+  padding: 5rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero img {
+  width: 160px;
+  margin-bottom: 1.25rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  color: var(--sub);
+  max-width: 600px;
+  margin-bottom: 1.25rem;
+}
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.accent {
+  color: var(--accent);
+}
+.card {
+  background: var(--card);
+  border: 1px solid #2a2a2e;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+.card h3 {
+  margin-bottom: 0.75rem;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  margin: 0.5rem 0;
+}
+.timeline {
+  position: relative;
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent);
+}
+.timeline .item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+.timeline .dot {
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+.timeline .content h4 {
+  margin: 0 0 0.25rem;
+}
+.timeline .content p {
+  margin: 0;
+  color: var(--sub);
+}
+footer {
+  padding: 2rem 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--sub);
+  border-top: 1px solid #222;
+}
+.social-footer {
+  margin-top: 0.5rem;
+}
+.social-footer a {
+  margin: 0 0.5rem;
+  color: var(--accent);
+}
+/* Mobile Responsive */
 @media (max-width: 600px) {
   nav .nav-container {
     flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
   }
   .social-btn {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.85rem;
   }
   .hero {
     padding: 3rem 1rem;
@@ -128,4 +185,3 @@
     padding: 1.5rem 1rem;
   }
 }
-
