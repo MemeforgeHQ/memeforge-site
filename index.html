@@ -2,97 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MemeForge HQ – Forging the Meme Meta</title>
-  <style>
-    :root{
-      --bg:#0d0d0e;
-      --card:#1b1b1d;
-      --accent:#ffce00;
-      --text:#f4f4f4;
-      --sub:#b5b5b5;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;}
-    a{color:var(--accent);text-decoration:none;font-weight:600}
-    header{background:#111316;border-bottom:1px solid #222}
-    nav{max-width:1200px;margin:0 auto;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center}
-    .logo{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:1.25rem}
-    .logo img{width:42px;height:42px}
-    .btn{background:var(--accent);color:#000;padding:.55rem 1.1rem;border-radius:.5rem;font-weight:700;display:inline-block}
-
-    .hero{padding:5rem 1.5rem;text-align:center;display:flex;flex-direction:column;align-items:center}
-    .hero img{width:160px;margin-bottom:1.25rem}
-    .hero h1{font-size:2.5rem;margin-bottom:.5rem}
-    .hero p{color:var(--sub);max-width:600px;margin-bottom:1.25rem}
-    .section{max-width:960px;margin:0 auto;padding:3rem 1.5rem}
-    h2{font-size:1.75rem;margin-bottom:1rem}
-    .card{background:var(--card);border:1px solid #2a2a2e;border-radius:1rem;padding:1.5rem;margin-top:1rem}
-    .card p{margin:.5rem 0}
-    .grid{display:grid;gap:1.5rem}
-    @media(min-width:600px){.grid{grid-template-columns:1fr 1fr}}
-    footer{padding:2rem .5rem;text-align:center;font-size:.85rem;color:var(--sub);border-top:1px solid #222}
-  </style>
+  <title>MemeForge HQ – Forging the Meme Meta</title>
+  <!-- SEO & Social Preview -->
+  <meta name="description" content="MemeForge HQ – forging trust-first meme launches. Join the raid: $OOZE – Turbo Snail on Pump.fun. No rug-pulls, community-led." />
+  <meta property="og:title" content="MemeForge HQ – Forging the Meme Meta" />
+  <meta property="og:description" content="We launch trust-first memecoins like $OOZE – Turbo Snail. No rug-pulls, permanently locked liquidity." />
+  <meta property="og:image" content="https://memeforge.me/assets/memeforge-logo.png" />
+  <meta property="og:url" content="https://memeforge.me" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- External stylesheet for performance & maintainability -->
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <header>
     <nav>
       <a class="logo" href="/">
-        <!-- Make sure memeforge-logo.png exists in assets/ folder with exactly this filename -->
-        <img src="assets/memeforge-logo.png" alt="MemeForge logo">
-        MemeForge HQ
+        <img src="assets/memeforge-logo.png" alt="MemeForge logo" />
+        MemeForge HQ
       </a>
       <a class="btn" href="https://twitter.com/MemeForgeHQ" target="_blank" rel="noopener">Follow us on X</a>
     </nav>
   </header>
 
   <section class="hero">
-    <img src="assets/memeforge-logo.png" alt="MemeForge logo"/>
+    <img src="assets/memeforge-logo.png" alt="MemeForge logo" />
     <h1>Forging the Meme Meta</h1>
-    <p>We create trust‑first micro‑launches. One raid at a time — backed by open data & zero rug‑pull policy.</p>
-    <a href="#current" class="btn">View Current Raid</a>
+    <p>We create trust-first micro-launches. One raid at a time — backed by open data & zero rug-pull policy.</p>
+    <!-- After launch, link directly to buy page -->
+    <a href="https://pump.fun/OOZE" class="btn">Buy on Pump.fun</a>
   </section>
 
   <section id="current" class="section">
-    <h2>Current Raid: <span style="color:var(--accent)">$OOZE — Turbo Snail</span></h2>
-    <div class="grid">
-      <div class="card">
+    <h2>Current Raid: <span class="accent">$OOZE – Turbo Snail</span></h2>
+    <div class="card grid">
+      <div>
         <h3>Launch Snapshot</h3>
-        <p><strong>Status:</strong> Pre‑launch (finalising community poll)</p>
-        <p><strong>Platform:</strong> Pump.fun fair‑launch</p>
+        <p><strong>Status:</strong> Pre-launch (finalising community poll)</p>
+        <p><strong>Platform:</strong> Pump.fun fair-launch</p>
         <p><strong>Live link:</strong> <em>coming soon</em></p>
       </div>
-      <div class="card">
+      <div>
         <h3>Key Principles</h3>
         <p>Supply: chosen by community vote</p>
-        <p>0 % tax • LP tokens will be permanently locked/burned – no rug‑pulls</p>
-        <p>No private whitelist or presale – everyone starts on equal footing</p>
+        <p>0% tax • LP tokens permanently locked/burned — no rug-pulls</p>
+        <p>No private presale — equal footing for all buyers</p>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <h2>Transparency &amp; Trust</h2>
+    <h2>Transparency & Trust</h2>
     <div class="card">
-      <p>📜 Smart‑contract audit: <em>link will appear here</em></p>
-      <p>🔒 LP‑lock / burn TX: <em>posted at launch</em></p>
-      <p>💼 Treasury wallet (multisig): <code>to‑be‑announced</code> • real‑time view on Solscan</p>
-      <p>📈 Holder &amp; mcap dashboards: publishing on Dune ↗</p>
+      <p>📜 Smart-contract audit: <em>link to PDF</em></p>
+      <p>🔒 LP-lock/burn TX: <em>posted at launch</em></p>
+      <p>💼 Treasury wallet (multisig): <code>to-be-announced</code> – real-time Solscan view</p>
+      <p>📈 Holder & mcap dashboards: live on Dune</p>
     </div>
   </section>
 
   <section class="section">
     <h2>Roadmap</h2>
     <div class="card">
-      <p><strong>Phase I</strong> — Pre‑launch (community poll, audit, site live)</p>
-      <p><strong>Phase II</strong> — Pump.fun launch → automatic Raydium listing</p>
-      <p><strong>Phase III</strong> — Liquidity lock/burn proof & data dashboards live</p>
-      <p><strong>Phase IV</strong> — Vote & forge the next meme raid 🚀</p>
+      <p><strong>Phase I</strong> — Pre-launch: poll, audit, site live</p>
+      <p><strong>Phase II</strong> — Pump.fun launch → auto Raydium listing</p>
+      <p><strong>Phase III</strong> — LP proof & data dashboards live</p>
+      <p><strong>Phase IV</strong> — Vote & forge the next raid 🚀</p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 MemeForge HQ — Not financial advice. Do your own research.</p>
+    <p>© 2025 MemeForge HQ — Not financial advice. Do your own research.</p>
+    <div class="social">
+      <a href="https://twitter.com/MemeForgeHQ" target="_blank" rel="noopener">Twitter</a>
+    </div>
   </footer>
 </body>
 </html>
